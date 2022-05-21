@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-radius: none;
+      }
+
+      .body {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        border: 1px dashed black;
+      }
+
+      .title {
+        font-size: 64px;
+        color: blueviolet;
+        flex: 1;
+      }
+
+      .img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 500px;
+        grid-template-areas:
+          "box1 box2"
+          "box3 box4";
+        place-content: center;
+        padding: 50px;
+      }
+
+      .img {
+        border: 1px solid black;
+        border-radius: 1rem;
+      }
+
+      .img1 {
+        grid-area: box1;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      .img2 {
+        grid-area: box2;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+
+      .img3 {
+        grid-area: box3;
+        margin-right: 10px;
+      }
+
+      .img4 {
+        grid-area: box4;
+        margin-left: 10px;
+      }
+
+      #login {
+        color: rgb(59, 112, 9);
+        font-size: 32px;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="nav">
+        <h1 class="title">Workshop</h1>
+        <h3 id="login">Login</h3>
+      </div>
+      <div class="img-grid">
+        <img src="./asset/cat.jpg" alt="cat" height="500px" width="500px"'
+        class='img1 img'/>
+        <img
+          src="./asset/flower.jpg"
+          alt="flower"
+          height="500px"
+          width="500px"
+          class="img2 img"
+        />
+        <img
+          src="./asset/mounatin.jpg"
+          alt="mounatin"
+          height="500px"
+          width="500px"
+          class="img3 img"
+        />
+        <img
+          src="./asset/sea.jpg"
+          alt="sea"
+          class="img4 img"
+          height="500px"
+          width="500px"
+        />
+      </div>
+    </div>
+  </body>
+</html>
